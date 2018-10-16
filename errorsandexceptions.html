@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            // function myFunc()
+            // {
+            //     var a = 100;
+            //     var b = 0;
+
+            //     try{
+            //         if(b == 0){
+            //             throw("Divide by zero error");
+            //         }else{
+            //             var c = a / b;
+            //             alert("c = " + c);
+            //         }
+            //     }
+            //     catch(e){
+            //         alert("Error: " + e);
+
+            //     }
+            //     finally{
+            //         alert("Finally block always execeutes!");
+            //     }
+            // }
+
+            window.onerror = function(msg,url,line){
+                alert("Message: " + msg);
+                alert("URL: " + url);
+                alert("Line number: " + line);
+            }
+        
+        </script>
+    </head>
+    <body>
+        <p>
+            Click here to see some action
+        </p>
+        <button onclick=myFunc()>Click me</button>
+    </body>
+</html>
